@@ -1,0 +1,23 @@
+{
+  "name": "stagehand-local-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Self-hosted MCP server wrapping the Stagehand library: local, headed, persistent browser driven by act/extract/observe over MCP.",
+  "main": "mcp-server.mjs",
+  "bin": {
+    "stagehand-local-mcp": "mcp-server.mjs"
+  },
+  "scripts": {
+    "start": "node mcp-server.mjs",
+    "postinstall": "playwright install chromium"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@browserbasehq/stagehand": "^3.6.0",
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^3.23.0"
+  }
+}

@@ -1,0 +1,6 @@
+node_modules/
+.auth/
+out/
+*.local
+.env
+*.log
